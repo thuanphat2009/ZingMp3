@@ -1,3 +1,8 @@
+:root{
+    --primary-color:#f00;
+    --while-color : #DADADA;
+    
+}
 *{
     box-sizing: inherit;
     margin: 0;
@@ -8,4 +13,71 @@ html{
     line-height: 1.6rem;
     font-family: Inter,sans-serif;
     box-sizing: border-box;
+    background-color: #170f23;
+}
+
+/* Menu Logo*/
+#menu{
+    width: 240px;
+    height: 100vh;
+    background-color: hsla(0,0%,100%,0.05);;
+}
+.menu-logo{
+    padding:14px 25px 0 28px;
+}
+.logo{
+    background:url('https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg') top center / cover  no-repeat;
+    width: 60%;
+    height: 55px;
+    background-size: contain;
+}
+
+/* Menu Header */
+.menu-header{
+    
+}
+
+.menu-item-main{
+    padding-left: 28px;
+    color: var(--while-color);
+    text-decoration: none;
+    width: 100%;
+}
+.menu-item{
+    height: 38px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.menu-item-descrip{
+    font-size: 1.3rem;
+    padding-left: 2px;
+    font-weight: 600;
+    opacity: 0.9;
+}   
+.menu-item-icon{
+    font-size: 1.7rem;
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
+}
+.menu-item:hover{
+    background-color: #393243;
+}
+.menu-item:hover .menu-item-descrip{
+   color: #ffffff;
+}
+.menu-item:hover .menu-item-icon{
+    color: #ffffff;
+}
+.menu-item:nth-child(4)::after{
+    content: '';
+    position: absolute;
+    background:url('https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg') top center / cover  no-repeat;
+    background-size: auto;
+    height: 16px;
+    width: 34px;
+    left: 100px;
+    bottom: 12px;
+    
 }
