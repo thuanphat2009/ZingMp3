@@ -28,13 +28,14 @@ html{
 .logo{
     background:url('https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg') top center / cover  no-repeat;
     width: 60%;
-    height: 55px;
+    height: 45px;
     background-size: contain;
 }
 
 /* Menu Header */
-.menu-header{
-    
+.menu-list{
+  margin-top: 8px;
+   
 }
 
 .menu-item-main{
@@ -48,6 +49,14 @@ html{
     position: relative;
     display: flex;
     align-items: center;
+}
+.menu-item::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #7200a1;
+    display: none;
 }
 .menu-item-descrip{
     font-size: 1.3rem;
@@ -64,20 +73,96 @@ html{
 .menu-item:hover{
     background-color: #393243;
 }
+.menu-item:hover.menu-item::before{
+    display: block;
+}
 .menu-item:hover .menu-item-descrip{
    color: #ffffff;
 }
 .menu-item:hover .menu-item-icon{
     color: #ffffff;
 }
-.menu-item:nth-child(4)::after{
-    content: '';
-    position: absolute;
+.line{
+    background-color: #352e3f;
+    height: 1px;
+    width: 184px;
+    margin: auto;
+    margin-top: 8px;
+}
+.live{
     background:url('https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg') top center / cover  no-repeat;
     background-size: auto;
     height: 16px;
     width: 34px;
-    left: 100px;
-    bottom: 12px;
+    position: absolute;
+    bottom: 13px;
+    right: 100px;
+}
+.menu-login{
+    margin: 8px 20px;
     
+    background: #7200a1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-login-description{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+.menu-login-btn{
+    padding: 6px 35px;
+    text-transform: uppercase;
+    background-color: #7200a1;
+    outline: #ffffff;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 38px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 73%;
+    margin-bottom: 15px;
+}
+.menu-login-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.menu-vip{
+    background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px 20px;
+
+}
+.menu-vip-description{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+.menu-vip-btn{
+    padding: 6px 35px;
+    text-transform: uppercase;
+    background-color: #ffdb00;
+    border-color: #ffdb00;
+    outline: #ffffff;
+    color: #32323D;
+    border-radius: 38px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 81%;
+    margin-bottom: 15px;
+}
+.menu-vip-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
