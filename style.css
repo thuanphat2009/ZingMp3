@@ -15,6 +15,9 @@ html{
     box-sizing: border-box;
     background-color: #170f23;
 }
+#main{
+    display: flex;
+}
 
 /* Menu Logo*/
 #menu{
@@ -97,6 +100,7 @@ html{
     bottom: 9px;
     right: 110px;
 }
+/* Menu Main */
 .menu-login{
     margin: 8px 20px;
     
@@ -151,7 +155,7 @@ html{
     padding: 6px 35px;
     text-transform: uppercase;
     background-color: #ffdb00;
-    border-color: #ffdb00;
+    border: 1px solid #ffdb00;
     outline: #ffffff;
     color: #32323D;
     border-radius: 38px;
@@ -164,6 +168,7 @@ html{
     opacity: 0.8;
     cursor: pointer;
 }
+/* Menu Playlist */
 .menu-playlist{
     border-top: 1px solid #352e3f;
     margin-top: 16px;
@@ -184,4 +189,37 @@ html{
 }
 .menu-playlist-content:hover{
     cursor: pointer;
+}
+/* Content Heading */
+#content{
+    flex: 1;
+}
+.content-heading{
+    padding: 0 30px;
+}
+.content-heading-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-heading-left{
+
+}
+.content-heading-left-icon{
+    font-size: 1.6rem;
+    color: #ffffff;
+    opacity: 0.3;
+    margin-right: 20px;
+}
+.content-heading-left-input{
+    width: 470px;
+    font-size: 1.4rem;
+    height: 34px;
+    line-height: 3.4rem;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    padding: 5px 30px;
+    color: #eee;
+    background-color: #2f2739;
 }
