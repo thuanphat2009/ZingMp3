@@ -24,7 +24,7 @@ html {
 /* Menu Logo*/
 
 #menu {
-    width: 240px;
+    width: 220px;
     height: 100vh;
     background-color: hsla(0, 0%, 100%, 0.05);
     ;
@@ -36,7 +36,7 @@ html {
 
 .logo {
     background: url('https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg') top center / cover no-repeat;
-    width: 60%;
+    width: 70%;
     height: 45px;
     background-size: contain;
 }
@@ -114,7 +114,7 @@ html {
     width: 34px;
     position: absolute;
     bottom: 9px;
-    right: 110px;
+    right: 90px;
 }
 
 /* Menu Main */
@@ -132,13 +132,13 @@ html {
 .menu-login-description {
     text-align: center;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    padding: 15px 20px;
+    padding: 15px 20px 8px 20px;
 }
 
 .menu-login-btn {
-    padding: 6px 35px;
+    padding: 6px 20px;
     text-transform: uppercase;
     background-color: #7200a1;
     outline: #ffffff;
@@ -169,13 +169,13 @@ html {
 .menu-vip-description {
     text-align: center;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    padding: 15px 20px;
+    padding: 15px 20px 8px 20px;
 }
 
 .menu-vip-btn {
-    padding: 6px 35px;
+    padding: 6px 20px;
     text-transform: uppercase;
     background-color: #ffdb00;
     border: 1px solid #ffdb00;
@@ -236,7 +236,9 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
 /* Heading Left */
+
 .content-heading-left {
     display: flex;
     align-items: center;
@@ -267,7 +269,7 @@ html {
     position: absolute;
     color: #ffffff;
     font-size: 1.7rem;
-    left: 25%;
+    left: 23.5%;
 }
 
 .content-heading-left-history {
@@ -275,7 +277,7 @@ html {
     width: 443px;
     background-color: #432275;
     top: 52px;
-    left: 350px;
+    left: 332px;
     display: none;
 }
 
@@ -304,38 +306,55 @@ html {
     font-size: 1.4rem;
     margin-left: 8px;
 }
-.content-heading-left-input:focus ~.content-heading-left-history{
+
+.content-heading-left-input:focus~.content-heading-left-history {
     display: block;
 }
-.content-heading-left-input:focus{
+
+.content-heading-left-input:focus {
     background-color: #432275;
 }
+
 /* Heading Right */
-.content-heading-right{
-    
-}
-.content-heading-right-list{
+
+.content-heading-right {}
+
+.content-heading-right-list {
     list-style: none;
     display: flex;
 }
-.content-heading-right-item{
+
+.content-heading-right-item {
     padding: 10px;
-    background-color: hsla(0,0%,100%,0.1);
+    background-color: hsla(0, 0%, 100%, 0.1);
     border-radius: 50%;
     margin-left: 10px;
     display: flex;
     align-items: center;
 }
-.content-heading-right-icon{
+
+.content-heading-right-icon {
     color: #ffffff;
     font-size: 1.5rem;
     opacity: 0.8;
 }
-.content-heading-right-img{
+
+.content-heading-right-img {
     width: 38px;
     border-radius: 50%;
     margin-left: 8px;
 }
-.content-heading-right-item:hover{
+
+.content-heading-right-item:hover {
     cursor: pointer;
+}
+
+/* Content */
+.content-main{
+    margin-top: 40px;
+}
+/* Content Left */
+.playlist-img{
+    width: 300px;
+    border-radius: 5px;
 }
