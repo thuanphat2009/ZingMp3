@@ -228,7 +228,7 @@ html {
 }
 
 .content-heading {
-    padding: 0 30px;
+    padding: 15px 30px;
 }
 
 .content-heading-box {
@@ -236,7 +236,7 @@ html {
     justify-content: space-between;
     align-items: center;
 }
-
+/* Heading Left */
 .content-heading-left {
     display: flex;
     align-items: center;
@@ -274,7 +274,7 @@ html {
     position: absolute;
     width: 443px;
     background-color: #432275;
-    top: 51px;
+    top: 52px;
     left: 350px;
     display: none;
 }
@@ -283,8 +283,6 @@ html {
     list-style: none;
     padding: 13px 10px;
 }
-
-.content-heading-left-history-item {}
 
 .content-heading-left-history-link {
     text-decoration: none;
@@ -311,4 +309,33 @@ html {
 }
 .content-heading-left-input:focus{
     background-color: #432275;
+}
+/* Heading Right */
+.content-heading-right{
+    
+}
+.content-heading-right-list{
+    list-style: none;
+    display: flex;
+}
+.content-heading-right-item{
+    padding: 10px;
+    background-color: hsla(0,0%,100%,0.1);
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.content-heading-right-icon{
+    color: #ffffff;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.content-heading-right-img{
+    width: 38px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+.content-heading-right-item:hover{
+    cursor: pointer;
 }
