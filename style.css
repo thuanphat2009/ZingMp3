@@ -1,59 +1,67 @@
-:root{
-    --primary-color:#f00;
-    --while-color : #DADADA;
-    
+:root {
+    --primary-color: #f00;
+    --while-color: #DADADA;
 }
-*{
+
+* {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
     box-sizing: border-box;
     background-color: #170f23;
 }
-#main{
+
+#main {
     display: flex;
 }
 
 /* Menu Logo*/
-#menu{
+
+#menu {
     width: 240px;
     height: 100vh;
-    background-color: hsla(0,0%,100%,0.05);;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    ;
 }
-.menu-logo{
-    padding:14px 25px 0 28px;
+
+.menu-logo {
+    padding: 14px 25px 0 28px;
 }
-.logo{
-    background:url('https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg') top center / cover  no-repeat;
+
+.logo {
+    background: url('https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg') top center / cover no-repeat;
     width: 60%;
     height: 45px;
     background-size: contain;
 }
 
 /* Menu Header */
-.menu-list{
-  margin-top: 8px;
-   
+
+.menu-list {
+    margin-top: 8px;
 }
 
-.menu-item-main{
+.menu-item-main {
     padding-left: 28px;
     color: var(--while-color);
     text-decoration: none;
     width: 100%;
 }
-.menu-item{
+
+.menu-item {
     height: 35px;
     position: relative;
     display: flex;
     align-items: center;
 }
-.menu-item::before{
+
+.menu-item::before {
     content: '';
     position: absolute;
     width: 2px;
@@ -61,38 +69,46 @@ html{
     background-color: #7200a1;
     display: none;
 }
-.menu-item-descrip{
+
+.menu-item-descrip {
     font-size: 1.2rem;
     padding-left: 2px;
     font-weight: 600;
     opacity: 0.9;
-}   
-.menu-item-icon{
+}
+
+.menu-item-icon {
     font-size: 1.7rem;
     width: 24px;
     opacity: 0.9;
 }
-.menu-item:hover{
+
+.menu-item:hover {
     background-color: #393243;
 }
-.menu-item:hover.menu-item::before{
+
+.menu-item:hover.menu-item::before {
     display: block;
 }
-.menu-item:hover .menu-item-descrip{
-   color: #ffffff;
-}
-.menu-item:hover .menu-item-icon{
+
+.menu-item:hover .menu-item-descrip {
     color: #ffffff;
 }
-.line{
+
+.menu-item:hover .menu-item-icon {
+    color: #ffffff;
+}
+
+.line {
     background-color: #352e3f;
     height: 1px;
     width: 184px;
     margin: auto;
     margin-top: 8px;
 }
-.live{
-    background:url('https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg') top center / cover  no-repeat;
+
+.live {
+    background: url('https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg') top center / cover no-repeat;
     background-size: auto;
     height: 16px;
     width: 34px;
@@ -100,10 +116,11 @@ html{
     bottom: 9px;
     right: 110px;
 }
+
 /* Menu Main */
-.menu-login{
+
+.menu-login {
     margin: 8px 20px;
-    
     background: #7200a1;
     border-radius: 8px;
     display: flex;
@@ -111,14 +128,16 @@ html{
     align-items: center;
     flex-direction: column;
 }
-.menu-login-description{
+
+.menu-login-description {
     text-align: center;
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 15px 20px;
 }
-.menu-login-btn{
+
+.menu-login-btn {
     padding: 6px 35px;
     text-transform: uppercase;
     background-color: #7200a1;
@@ -131,12 +150,14 @@ html{
     width: 73%;
     margin-bottom: 15px;
 }
-.menu-login-btn:hover{
+
+.menu-login-btn:hover {
     opacity: 0.8;
     cursor: pointer;
 }
-.menu-vip{
-    background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+
+.menu-vip {
+    background-image: linear-gradient(117deg, #5a4be7, #c86dd7 102%);
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -144,14 +165,16 @@ html{
     flex-direction: column;
     margin: 8px 20px;
 }
-.menu-vip-description{
+
+.menu-vip-description {
     text-align: center;
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 15px 20px;
 }
-.menu-vip-btn{
+
+.menu-vip-btn {
     padding: 6px 35px;
     text-transform: uppercase;
     background-color: #ffdb00;
@@ -164,54 +187,69 @@ html{
     width: 81%;
     margin-bottom: 15px;
 }
-.menu-vip-btn:hover{
+
+.menu-vip-btn:hover {
     opacity: 0.8;
     cursor: pointer;
 }
+
 /* Menu Playlist */
-.menu-playlist{
+
+.menu-playlist {
     border-top: 1px solid #352e3f;
     margin-top: 16px;
 }
-.menu-playlist-content{
+
+.menu-playlist-content {
     padding: 10px 28px;
     color: #ffffff;
     display: flex;
     align-items: center;
 }
-.menu-playlist-icon{
+
+.menu-playlist-icon {
     font-size: 2rem;
 }
-.menu-playlist-descrip{
+
+.menu-playlist-descrip {
     font-size: 1.4rem;
     margin-left: 10px;
     font-weight: 700;
 }
-.menu-playlist-content:hover{
+
+.menu-playlist-content:hover {
     cursor: pointer;
 }
+
 /* Content Heading */
-#content{
+
+#content {
     flex: 1;
 }
-.content-heading{
+
+.content-heading {
     padding: 0 30px;
 }
-.content-heading-box{
+
+.content-heading-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.content-heading-left{
 
+.content-heading-left {
+    display: flex;
+    align-items: center;
 }
-.content-heading-left-icon{
+
+.content-heading-left-icon {
     font-size: 1.6rem;
     color: #ffffff;
     opacity: 0.3;
     margin-right: 20px;
 }
-.content-heading-left-input{
+
+.content-heading-left-input {
     width: 470px;
     font-size: 1.4rem;
     height: 34px;
@@ -222,4 +260,55 @@ html{
     padding: 5px 30px;
     color: #eee;
     background-color: #2f2739;
+    position: relative;
+}
+
+.content-heading-search-icon {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.7rem;
+    left: 25%;
+}
+
+.content-heading-left-history {
+    position: absolute;
+    width: 443px;
+    background-color: #432275;
+    top: 51px;
+    left: 350px;
+    display: none;
+}
+
+.content-heading-left-history-list {
+    list-style: none;
+    padding: 13px 10px;
+}
+
+.content-heading-left-history-item {}
+
+.content-heading-left-history-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 10px;
+    display: block;
+}
+
+.content-heading-left-history-link:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.content-heading-left-history-icon {
+    font-size: 1.4rem;
+    opacity: 0.5;
+}
+
+.content-heading-left-history-descrip {
+    font-size: 1.4rem;
+    margin-left: 8px;
+}
+.content-heading-left-input:focus ~.content-heading-left-history{
+    display: block;
+}
+.content-heading-left-input:focus{
+    background-color: #432275;
 }
