@@ -24,7 +24,7 @@ html {
 /* Menu Logo*/
 
 #menu {
-    width: 220px;
+    width: 230px;
     height: 100vh;
     background-color: hsla(0, 0%, 100%, 0.05);
     ;
@@ -269,7 +269,7 @@ html {
     position: absolute;
     color: #ffffff;
     font-size: 1.7rem;
-    left: 23.5%;
+    left: 24.25%;
 }
 
 .content-heading-left-history {
@@ -355,6 +355,74 @@ html {
 }
 /* Content Left */
 .playlist-img{
-    width: 300px;
+    width: 100%;
     border-radius: 5px;
+}
+.content-left-box{
+    text-align: center;
+    margin-top: 10px;
+}
+.content-left-box-title{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+.content-left-sub{
+    margin-top: 8px;
+    color: hsla(0,0%,100%,0.5);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.content-left-sub-time,.content-left-sub-singer,.content-left-sub-like{
+    margin: 4px 0;
+}
+.content-left-sub-link{
+    margin-top: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 9px 24px;
+    display: inline-block;
+    border: 1px solid #7200a1;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all linear 0.2s;
+}
+.content-left-sub-link:hover{
+    margin-top: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 9px 24px;
+    display: inline-block;
+    background-color: #7200a1;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.content-left-sub-link-icon{
+    margin-right: 8px;
+}
+.content-left-more{
+    margin-top: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.content-left-more-item{
+    padding: 10px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 50%;
+    margin-left:10px;
+    display: flex;
+    align-items: center;
+}
+.content-left-more-item:hover{
+    cursor: pointer;
+}
+.content-left-more-icon{
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 16px;
 }
