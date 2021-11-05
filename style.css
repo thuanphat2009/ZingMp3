@@ -399,8 +399,8 @@ html {
     cursor: pointer;
 }
 .box-img:hover .playlist-img{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
     overflow: hidden;
             
 }
