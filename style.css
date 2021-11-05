@@ -507,7 +507,7 @@ html {
     background-color:hsla(0,0%,100%,0.1);
 }
 .content-right-song:first-child:hover{
-    background-color: unset;
+    background-color: #170f23;
 }
 .content-right-song:first-child{
     font-size: 1.2rem;
