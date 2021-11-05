@@ -144,16 +144,19 @@ html {
     outline: #ffffff;
     border: 1px solid #ffffff;
     color: #ffffff;
-    border-radius: 38px;
+    border-radius: 999px;
     font-size: 1.2rem;
     font-weight: 600;
     width: 73%;
     margin-bottom: 15px;
+    transition: all linear 0.2s;
 }
 
 .menu-login-btn:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
     cursor: pointer;
+    background-color: #ffffff;
+    color: #7200a1;
 }
 
 .menu-vip {
@@ -177,20 +180,23 @@ html {
 .menu-vip-btn {
     padding: 6px 20px;
     text-transform: uppercase;
-    background-color: #ffdb00;
+    background-color: transparent;
     border: 1px solid #ffdb00;
     outline: #ffffff;
-    color: #32323D;
+    color: #ffdb00;
     border-radius: 38px;
     font-size: 1.2rem;
     font-weight: 600;
-    width: 81%;
+    width: 73%;
     margin-bottom: 15px;
+    transition: all linear 0.2s;
 }
 
 .menu-vip-btn:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
     cursor: pointer;
+    background-color: #ffdb00;
+    color: #32323D;
 }
 
 /* Menu Playlist */
@@ -259,7 +265,7 @@ html {
     border-radius: 16px;
     outline: none;
     border: none;
-    padding: 5px 30px;
+    padding: 5px 40px;
     color: #eee;
     background-color: #2f2739;
     position: relative;
@@ -356,7 +362,47 @@ html {
 /* Content Left */
 .playlist-img{
     width: 100%;
+    
+    transition: .5s;  
+}
+.box-img{
+    position: relative;
+    overflow: hidden;
     border-radius: 5px;
+}
+.opacity{
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all linear 0.2s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    
+    
+}
+.opacity-icon{
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: 300;
+    
+}
+.box-img:hover .opacity{
+    opacity: 1;
+    transition: .5s;
+    cursor: pointer;
+}
+.box-img:hover .playlist-img{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    overflow: hidden;
+            
 }
 .content-left-box{
     text-align: center;
