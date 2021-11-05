@@ -472,3 +472,124 @@ html {
     font-size: 1.5rem;
     width: 16px;
 }
+/* Content right */
+.content-right-box{
+
+}
+.content-right-box-heading{
+    font-size: 1.3rem;
+    color: hsla(0,0%,100%,0.5);
+    font-weight: 400;
+}
+.content-right-box-heading span{
+    color: #ffffff;
+}
+.content-right-playlist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 550px;
+    overflow-y: auto;
+    
+}
+.content-right-song{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid hsla(0,0%,100%,0.05);;
+}
+.content-right-song:hover{
+    background-color:hsla(0,0%,100%,0.1);
+}
+.content-right-song:first-child:hover{
+    background-color: unset;
+}
+.content-right-song:first-child{
+    font-size: 1.2rem;
+    color: hsla(0,0%,100%,0.5);
+    
+}
+.content-right-playlist::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+    /* background của thanh cuộn */
+}
+
+.content-right-playlist::-webkit-scrollbar-thumb {
+    background-color: #a1a1a1;
+    /* màu của thanh cuộn*/
+    /* border-radius: 10px; */
+}
+
+.content-right-song-text{
+    margin-left: 23px;
+}
+.content-right-song-text2{
+    margin-left: 105px;
+}
+.content-right-song-text3{
+    margin-right: 37px;
+}
+.content-right-song-box{
+    display: flex;
+    align-items: center;
+}
+.content-right-song-box-icon{
+    font-size: 1.3rem;
+    color:hsla(0,0%,100%,0.5);
+    padding-right: 10px;
+}
+.content-right-song-box-main{
+    
+    display: flex;
+    align-items: center;
+}
+.content-right-song-box-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.content-right-song-box-more{
+    margin-left: 10px;
+}
+.content-right-song-box-name{
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+.content-right-song-box-singer{
+    font-size: 1.1rem;
+    color: hsla(0,0%,100%,0.5);
+    font-weight: 400;
+}
+.content-right-song-box-singer:hover{
+    cursor: pointer;
+    color: #c662ef;
+    text-decoration: underline;
+}
+.content-right-song-time{
+    color: hsla(0,0%,100%,0.5);
+    font-size: 1.1rem;
+}
+.content-right-song-option-list{
+    list-style: none;
+    display: flex;
+}
+.content-right-song-option-item{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.content-right-song-option-item:hover{
+    background-color: hsla(0, 0%, 100%, 0.1);
+    cursor: pointer;
+}
+.content-right-song-option-icon{
+    color: #ffffff;
+}
