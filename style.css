@@ -490,7 +490,7 @@ html {
     display: flex;
     flex-direction: column;
     
-    height: 550px;
+    height: 530px;
     overflow-y: scroll;
     
 }
@@ -501,6 +501,7 @@ html {
     padding: 10px;
     border-radius: 5px;
     border-bottom: 1px solid hsla(0,0%,100%,0.05);;
+    transition: all linear .2s;
 }
 .content-right-song:hover{
     background-color:hsla(0,0%,100%,0.1);
@@ -514,6 +515,7 @@ html {
     position: sticky;
     top: 0;
     background-color:#170f23 ;
+    z-index: 2;
 }
 .content-right-playlist::-webkit-scrollbar {
     width: 2px;
@@ -555,6 +557,28 @@ html {
     height: 40px;
     border-radius: 5px;
 }
+.opcity-song:hover{
+    cursor: pointer;
+}
+.box-song-opacity{
+    position: relative;
+}
+.opcity-song{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.opcity-song-icon{
+    color: #ffffff;
+}
 .content-right-song-box-more{
     margin-left: 10px;
 }
@@ -562,6 +586,9 @@ html {
     font-size: 1.3rem;
     color: #ffffff;
     font-weight: 400;
+}
+.content-right-song-box-name:hover{
+    cursor: pointer;
 }
 .content-right-song-box-singer{
     font-size: 1.1rem;
@@ -592,6 +619,10 @@ html {
 .content-right-song-option-item:hover{
     background-color: hsla(0, 0%, 100%, 0.1);
     cursor: pointer;
+}
+.content-right-song:hover .opcity-song{
+    opacity: 1;
+    transition: .2s;
 }
 .content-right-song-option-icon{
     color: #ffffff;
