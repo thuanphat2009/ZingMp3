@@ -480,6 +480,7 @@ html {
     font-size: 1.3rem;
     color: hsla(0,0%,100%,0.5);
     font-weight: 400;
+    margin-bottom: 20px;
 }
 .content-right-box-heading span{
     color: #ffffff;
@@ -488,9 +489,9 @@ html {
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    
     height: 550px;
-    overflow-y: auto;
+    overflow-y: scroll;
     
 }
 .content-right-song{    
@@ -510,7 +511,9 @@ html {
 .content-right-song:first-child{
     font-size: 1.2rem;
     color: hsla(0,0%,100%,0.5);
-    
+    position: sticky;
+    top: 0;
+    background-color:#170f23 ;
 }
 .content-right-playlist::-webkit-scrollbar {
     width: 2px;
