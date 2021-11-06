@@ -283,8 +283,9 @@ html {
     width: 443px;
     background-color: #432275;
     top: 52px;
-    left: 332px;
+    left: 340px;
     display: none;
+    z-index: 3;
 }
 
 .content-heading-left-history-list {
@@ -517,13 +518,13 @@ html {
     background-color:#170f23 ;
     z-index: 2;
 }
-.content-right-playlist::-webkit-scrollbar {
+.content-right-playlist::-webkit-scrollbar , .menu-main::-webkit-scrollbar{
     width: 2px;
     background-color: transparent;
     /* background của thanh cuộn */
 }
 
-.content-right-playlist::-webkit-scrollbar-thumb {
+.content-right-playlist::-webkit-scrollbar-thumb ,.menu-main::-webkit-scrollbar-thumb{
     background-color: #a1a1a1;
     /* màu của thanh cuộn*/
     /* border-radius: 10px; */
