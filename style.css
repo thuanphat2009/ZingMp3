@@ -367,6 +367,7 @@ html {
 .playlist-img {
     width: 100%;
     transition: .5s;
+    border-radius: 5px;
 }
 
 .box-img {
@@ -404,8 +405,8 @@ html {
 }
 
 .box-img:hover .playlist-img {
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     overflow: hidden;
 }
 
@@ -680,11 +681,15 @@ html {
     right: 0;
     border-top: 1px solid hsla(0, 0%, 100%, 0.05);
     display: none;
-    align-items: center;
+    
 }
 
 .music-box {
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
 
 /* Left */
@@ -742,8 +747,44 @@ html {
 
 /* Center */
 
-.music-center {}
+.music-center {
 
+}
+.music-center-option{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.music-center-option-item{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.music-center-option-item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+.music-center-option-icon{
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+.icon-play{
+    font-size: 3.5rem;
+}
+.icon-play:hover{
+    color: blueviolet;
+}
+.music-center-option-item:nth-child(3):hover{
+    background-color: unset;
+    cursor: pointer;
+}
+.music-center-duration{
+
+}
 /* Right */
 
 .music-right {}
