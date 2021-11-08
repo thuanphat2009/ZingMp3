@@ -14,6 +14,6 @@ song.forEach(function(value,index){
         listMainMenu.style.height = '340px'
         listMainMenu.style.overflowY = 'auto';
         newPlayList.style.display = 'none';
-        music.style.display = 'flex';
+        music.style.display = 'block';
     }
 })
