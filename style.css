@@ -9,11 +9,24 @@
     padding: 0;
 }
 
+dl, ol, ul {
+    margin-bottom: 0;
+}
+
+a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: Inter, sans-serif;
     box-sizing: border-box;
+    background-color: #170f23;
+}
+
+body {
     background-color: #170f23;
 }
 
@@ -133,8 +146,8 @@ html {
     text-align: center;
     color: #ffffff;
     font-size: 1.1rem;
-    font-weight: 600;
-    padding: 15px 20px 8px 20px;
+    font-weight: 700;
+    padding: 15px 15px 0px 13px;
 }
 
 .menu-login-btn {
@@ -173,8 +186,8 @@ html {
     text-align: center;
     color: #ffffff;
     font-size: 1.1rem;
-    font-weight: 600;
-    padding: 15px 20px 8px 20px;
+    font-weight: 700;
+    padding: 15px 15px 0px 13px;
 }
 
 .menu-vip-btn {
@@ -599,7 +612,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 4px;
+    bottom: 0;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -618,7 +631,7 @@ html {
 .content-right-song-box-name {
     font-size: 1.3rem;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .content-right-song-box-name:hover {
@@ -681,7 +694,6 @@ html {
     right: 0;
     border-top: 1px solid hsla(0, 0%, 100%, 0.05);
     display: none;
-    
 }
 
 .music-box {
@@ -735,7 +747,8 @@ html {
     border-radius: 50%;
     margin-left: 5px;
 }
-.music-left-option-item:hover{
+
+.music-left-option-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
@@ -747,15 +760,16 @@ html {
 
 /* Center */
 
-.music-center {
+.music-center {}
 
-}
-.music-center-option{
+.music-center-option {
     display: flex;
     align-items: center;
     list-style: none;
+    justify-content: center;
 }
-.music-center-option-item{
+
+.music-center-option-item {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -763,28 +777,77 @@ html {
     border-radius: 50%;
     margin-left: 5px;
 }
-.music-center-option-item:hover{
+
+.music-center-option-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
-.music-center-option-icon{
+
+.music-center-option-icon {
     font-size: 1.6rem;
     color: #ffffff;
     font-weight: 500;
 }
-.icon-play{
+
+.icon-play {
     font-size: 3.5rem;
 }
-.icon-play:hover{
+
+.icon-play:hover {
     color: blueviolet;
 }
-.music-center-option-item:nth-child(3):hover{
+
+.music-center-option-item:nth-child(3):hover {
     background-color: unset;
     cursor: pointer;
 }
-.music-center-duration{
 
+.music-center-duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.music-center-time-now {
+    margin-right: 8px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.music-center-time-total {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: 8px;
+}
+
+.progress {
+    -webkit-appearance: none;
+        width: 100%;
+        height: 3px;
+        align-self: center;
+        border-radius: 6px;
+        outline: none;
+        -webkit-transition: 0.2s;
+        transition: all 0.2s;
+    background: linear-gradient(to right, white 7.25573%, rgba(255, 255, 255, 0.3) 5.67546%);
+}
+.progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.progress:hover.progress::-webkit-slider-thumb {
+    display: block;
+    height: 6px;
+}
+.progress-bar {
+    background-color: #ffffff;
+}
+
 /* Right */
 
 .music-right {}
