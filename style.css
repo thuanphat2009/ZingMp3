@@ -820,28 +820,31 @@ body {
     margin-left: 8px;
 }
 
-.progress {
+.progress1{
     -webkit-appearance: none;
-        width: 100%;
+        width: 490px;
         height: 3px;
         align-self: center;
         border-radius: 6px;
         outline: none;
         -webkit-transition: 0.2s;
-        transition: all 0.2s;
+        transition: all 0.1s;
     background: linear-gradient(to right, white 7.25573%, rgba(255, 255, 255, 0.3) 5.67546%);
 }
-.progress::-webkit-slider-thumb{
+.progress1::-webkit-slider-thumb{
     -webkit-appearance: none;
     background-color: white;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     cursor: pointer;
     display: none;
 }
-.progress:hover.progress::-webkit-slider-thumb {
+.progress1:hover.progress1::-webkit-slider-thumb {
     display: block;
+    
+}
+.progress1:hover{
     height: 6px;
 }
 .progress-bar {
