@@ -819,7 +819,6 @@ body {
     font-size: 1.2rem;
     margin-left: 8px;
 }
-
 .progress1{
     -webkit-appearance: none;
     width: 490px;
@@ -842,9 +841,6 @@ body {
     cursor: pointer;
     box-shadow: -504px 0px 0px 500px  white;
 }
-
-
-
 .progress1:hover{
     height: 6px;
 }
@@ -852,26 +848,72 @@ body {
 /* Right */
 
 .music-right {
-
+    display: flex;
+    align-items: center;
 }
-.music-right-option{
-
+.music-right-option{    
+    display: flex;
+    align-items: center;
 }
 .music-right-item{
-
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.music-right-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 .music-right-item-icon{
-
+    color: #ffffff;
+    font-size: 1.2rem;
 }
 .volume{
 
 }
 .progress2{
-
+-webkit-appearance: none;
+    width: 70px;
+    height: 3px;
+    align-self: center;
+    border-radius: 6px;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: all 0.1s;
+    background: hsla(0, 0%, 100%, 0.1);
+    overflow: hidden;
+}
+.progress2::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: white;
+    width: 6px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -504px 0px 0px 500px  white;
+}
+.progress2:hover{
+    height: 6px;
 }
 .music-right-more{
 
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+.music-right-more:hover{
+    cursor: pointer;
 }
 .music-right-more-icon{
-    
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.line2{
+    width: 1px;
+    height: 30px;
+    margin: 0 20px;
+    background-color: #352e3f;
 }
