@@ -720,6 +720,7 @@ body {
 .music-left {
     display: flex;
     align-items: center;
+    width: 300px;
 }
 
 .img-music {
@@ -864,10 +865,12 @@ body {
 .music-right {
     display: flex;
     align-items: center;
+    width: 300px;
 }
 .music-right-option{    
     display: flex;
     align-items: center;
+    width: 155px;
 }
 .music-right-item{
     padding: 10px;

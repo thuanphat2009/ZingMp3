@@ -24,7 +24,7 @@ const volume = $('.progress2')
 const btnVolume = $('.fa-volume-up')
 console.log(btnVolume)
 const app = {
-    currentIndex: 0,
+    currentIndex: '',
     isPlaying: false,
     isRandom: false,
     isRepeat: false,
@@ -154,21 +154,10 @@ const app = {
                 listMainMenu.style.overflowY = 'auto';
                 newPlayList.style.display = 'none';
                 music.style.display = 'block'; 
+                app.currentIndex = index
             }
         })
-        // $$('.content-right-song').forEach(function(a,index){
-        
-        //     a.onclick = function(){
-        //         if($('.content-right-song.active') != null){
-        //             $('.content-right-song.active').classList.remove('active')
-        //             this.classList.add('active')
-        //         }
-        //         else{
-        //             this.classList.add('active')
-        //         }
-               
-        //     }
-        // })
+    
     },
     defineProperties: function(){
         Object.defineProperty(this, 'currentSong',{
@@ -383,7 +372,6 @@ const app = {
         this.defineProperties();
         // Render bài hát
          this.render();
-         this.loadCurrentSong();
          this.clickSong();
         //  Lắng nghe / xử lí các sự kiện
          this.handleEvent();
