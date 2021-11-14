@@ -534,6 +534,9 @@ body {
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
     transition: all linear .2s;
 }
+.content-right-song.active{
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
 .content-right-song-heading{
     display: flex;
     font-size: 1.2rem;
@@ -796,7 +799,9 @@ body {
     color: #ffffff;
     font-weight: 500;
 }
-
+.fa-random.active,.fa-repeat.active{
+    color: #7200a1;
+}
 .icon-play {
     font-size: 3.5rem;
 }
