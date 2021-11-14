@@ -20,11 +20,15 @@ const btnRepeat = $('.fal.fa-repeat')
 const option = $$('.content-right-song-option-list')
 const timeAudio = $('.music-center-time-total')
 const timeCurrent = $('.music-center-time-now')
+const volume = $('.progress2')
+const btnVolume = $('.fa-volume-up')
+console.log(btnVolume)
 const app = {
     currentIndex: 0,
     isPlaying: false,
     isRandom: false,
     isRepeat: false,
+    isMute: false,
     song: [
         {
             name: 'Nhắm Mắt Thấy Mùa Hè',
@@ -191,6 +195,7 @@ const app = {
             _this.isPlaying = true
             playBtn.classList.remove('fa-play-circle')
             playBtn.classList.add('fa-pause-circle')
+            volume.value = 1
             cd.play()
         }
         audio.onpause = function(){
@@ -206,14 +211,15 @@ const app = {
              if(audio.duration){
                 const progressPercent = Math.floor(audio.currentTime / audio.duration * 100)
                 progress.value = progressPercent
-                var total = app.changeToTime(Math.floor(audio.duration));
-                // totalTime.textContent = total === 'NaN:NaN:NaN' ? '00:00' : total;
-    
-                var totalBehind = total === 'NaN:NaN:NaN' ? '00:00' : total;
+                var total = app.changeToTime(Math.floor(audio.duration))
+                var totalBehind = total === 'NaN:NaN:NaN' ? '00:00' : total
                 timeAudio.textContent = totalBehind
                 timeCurrent.textContent = app.changeToTime(Math.floor(audio.currentTime))
-                // currentTime.textContent = app.changeToTime(Math.floor(audio.currentTime)) + ` / ${totalBehind}`
              }
+        }
+        // Khi volume thay đổi
+        volume.ontimeupdate = function(){
+            console.log('dqwd')
         }
         // Tua Song
         progress.onchange = function(e){
@@ -275,6 +281,41 @@ const app = {
                     _this.render()
                     audio.play()
                 }
+            }
+        }
+        var volumeRage = 1;
+        //Xử lý tăng giảm âm lượng
+        volume.oninput = function () {
+            volumeRage = volume.value;
+            audio.volume = volume.value;
+
+            if (audio.volume == 0)
+            {
+                _this.isMute = true
+                btnVolume.classList.remove('fa-volume-up',!_this.isMute)
+                btnVolume.classList.add('fa-volume-mute',_this.isMute)
+            }
+               
+            else 
+                _this.isMute = false
+                btnVolume.classList.remove('fa-volume-mute',_this.isMute)
+                btnVolume.classList.add('fa-volume-up',!_this.isMute)
+        }
+
+        //Xử lý tắt/mở âm thanh
+        btnVolume.onclick = function () {
+            _this.isMute = !_this.isMute
+           
+            if (_this.isMute) {
+                btnVolume.classList.remove('fa-volume-up',_this.isMute)
+                btnVolume.classList.add('fa-volume-mute',!_this.isMute )
+                volume.value = 0;
+                audio.volume = volume.value;
+            } else {
+                btnVolume.classList.remove('fa-volume-mute',_this.isMute)
+                btnVolume.classList.add('fa-volume-up',!_this.isMute )
+                volume.value = volumeRage;
+                audio.volume = volume.value;
             }
         }
 
