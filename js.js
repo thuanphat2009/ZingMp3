@@ -18,7 +18,8 @@ const btnPrev = $('.fas.fa-step-backward')
 const btnRandom = $('.far.fa-random')
 const btnRepeat = $('.fal.fa-repeat')
 const option = $$('.content-right-song-option-list')
-
+const timeAudio = $('.music-center-time-total')
+const timeCurrent = $('.music-center-time-now')
 const app = {
     currentIndex: 0,
     isPlaying: false,
@@ -148,7 +149,7 @@ const app = {
                 listMainMenu.style.height = '340px'
                 listMainMenu.style.overflowY = 'auto';
                 newPlayList.style.display = 'none';
-                music.style.display = 'block';
+                music.style.display = 'block'; 
             }
         })
         // $$('.content-right-song').forEach(function(a,index){
@@ -177,11 +178,12 @@ const app = {
         // Xử lí khi click play
         playBtn.onclick = function(){
             if(_this.isPlaying){
-            
+                
               audio.pause()
             }
             else{
                 audio.play()
+                
             }
             
         }
@@ -189,14 +191,13 @@ const app = {
             _this.isPlaying = true
             playBtn.classList.remove('fa-play-circle')
             playBtn.classList.add('fa-pause-circle')
-           
             cd.play()
         }
         audio.onpause = function(){
             _this.isPlaying = false
             playBtn.classList.remove('fa-pause-circle')
             playBtn.classList.add('fa-play-circle')
-            
+            // console.log(this.duration)
             cd.pause()
         }
 
@@ -205,6 +206,13 @@ const app = {
              if(audio.duration){
                 const progressPercent = Math.floor(audio.currentTime / audio.duration * 100)
                 progress.value = progressPercent
+                var total = app.changeToTime(Math.floor(audio.duration));
+                // totalTime.textContent = total === 'NaN:NaN:NaN' ? '00:00' : total;
+    
+                var totalBehind = total === 'NaN:NaN:NaN' ? '00:00' : total;
+                timeAudio.textContent = totalBehind
+                timeCurrent.textContent = app.changeToTime(Math.floor(audio.currentTime))
+                // currentTime.textContent = app.changeToTime(Math.floor(audio.currentTime)) + ` / ${totalBehind}`
              }
         }
         // Tua Song
@@ -317,6 +325,17 @@ const app = {
             })
         },300)
         
+    },
+    changeToTime(secs) {
+        var sec_num = parseInt(secs, 10)
+        var hours = Math.floor(sec_num / 3600)
+        var minutes = Math.floor(sec_num / 60) % 60
+        var seconds = sec_num % 60
+
+        return [hours, minutes, seconds]
+            .map(v => v < 10 ? "0" + v : v)
+            .filter((v, i) => v !== "00" || i > 0)
+            .join(":")
     },
     start: function(){
         // Định nghĩa các thuộc tính cho Object
