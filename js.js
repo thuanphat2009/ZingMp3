@@ -17,6 +17,8 @@ const btnNext = $('.fas.fa-step-forward')
 const btnPrev = $('.fas.fa-step-backward')
 const btnRandom = $('.far.fa-random')
 const btnRepeat = $('.fal.fa-repeat')
+const option = $$('.content-right-song-option-list')
+
 const app = {
     currentIndex: 0,
     isPlaying: false,
@@ -140,7 +142,7 @@ const app = {
     clickSong: function(){
         
         
-        $$('.opcity-song').forEach(function(value,index){
+        $$('.content-right-song').forEach(function(value,index){
             value.onclick = function(){
                 playList.style.height = '422px'
                 listMainMenu.style.height = '340px'
@@ -149,19 +151,19 @@ const app = {
                 music.style.display = 'block';
             }
         })
-        $$('.content-right-song').forEach(function(a,index){
+        // $$('.content-right-song').forEach(function(a,index){
         
-            a.onclick = function(){
-                if($('.content-right-song.active') != null){
-                    $('.content-right-song.active').classList.remove('active')
-                    this.classList.add('active')
-                }
-                else{
-                    this.classList.add('active')
-                }
+        //     a.onclick = function(){
+        //         if($('.content-right-song.active') != null){
+        //             $('.content-right-song.active').classList.remove('active')
+        //             this.classList.add('active')
+        //         }
+        //         else{
+        //             this.classList.add('active')
+        //         }
                
-            }
-        })
+        //     }
+        // })
     },
     defineProperties: function(){
         Object.defineProperty(this, 'currentSong',{
@@ -172,17 +174,6 @@ const app = {
     },
     handleEvent: function(){
         const _this = this
-        // playList.onclick = function(e){
-        //     const songNode = e.target.closest('.content-right-song:not(.active)')
-        //     console.log(songNode)
-        //     if(songNode){
-        //         _this.currentIndex = songNode.dataset.index
-        //         _this.loadCurrentSong()
-        //         _this.render()
-        //         audio.play()
-                
-        //     }
-        // }
         // Xử lí khi click play
         playBtn.onclick = function(){
             if(_this.isPlaying){
@@ -231,6 +222,7 @@ const app = {
             }
            audio.play()
            _this.render()
+           _this.scrollToActiveSong()
         }
         // Prev Song
         btnPrev.onclick = function(){
@@ -242,6 +234,7 @@ const app = {
             }
             audio.play()
             _this.render()
+            _this.scrollToActiveSong()
         }
         // Bật tắt Random
         btnRandom.onclick = function(){
@@ -262,6 +255,21 @@ const app = {
             _this.isRepeat = !_this.isRepeat
             btnRepeat.classList.toggle('active',_this.isRepeat)
         }
+        // Lắng nghe hành vi click vào playlist
+        playList.onclick = function(e){
+            const songNode = e.target.closest('.content-right-song')
+            if(songNode || e.target.closest('.content-right-song-option-list')) 
+            {
+                // Khi click vao Song
+                if(songNode){
+                    _this.currentIndex =  Number(songNode.dataset.index)
+                    _this.loadCurrentSong()
+                    _this.render()
+                    audio.play()
+                }
+            }
+        }
+
         // Xử lí xoay dĩa
         const cd = cdThump.animate([
             { transform: 'rotate(360deg)'}
@@ -301,7 +309,15 @@ const app = {
         this.currentIndex = newIndex
         this.loadCurrentSong()
     },
-    
+    scrollToActiveSong: function(){
+        setTimeout(function(){
+            $('.content-right-song.active').scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+            })
+        },300)
+        
+    },
     start: function(){
         // Định nghĩa các thuộc tính cho Object
         this.defineProperties();
