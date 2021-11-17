@@ -22,7 +22,11 @@ const timeAudio = $('.music-center-time-total')
 const timeCurrent = $('.music-center-time-now')
 const volume = $('.progress2')
 const btnVolume = $('.fa-volume-up')
-console.log(btnVolume)
+const btnPlayLeft = $('.fas.fa-play')
+const imgMain = $('.playlist-img')
+const boxImg =$('.box-img')
+const opacityImg = $('.opacity')
+console.log(imgMain)
 const app = {
     currentIndex: '',
     isPlaying: false,
@@ -180,18 +184,38 @@ const app = {
             }
             
         }
+        btnPlayLeft.onclick = function(){
+            if(_this.isPlaying){
+                audio.pause()
+            }
+            else{
+                audio.play()
+                
+            }
+            
+        }
         audio.onplay = function(){
             _this.isPlaying = true
+            btnPlayLeft.classList.remove('fa-play')
+            btnPlayLeft.classList.add('fa-pause')
             playBtn.classList.remove('fa-play-circle')
             playBtn.classList.add('fa-pause-circle')
+            imgMain.style.borderRadius = '50%'
+            imgMain.style.transition  = 'all linear .5s'
+            boxImg.style.borderRadius = '50%'
+            opacityImg.style.borderRadius = '50%'
             volume.value = 1
+            img.play()
             cd.play()
         }
         audio.onpause = function(){
             _this.isPlaying = false
+            btnPlayLeft.classList.remove('fa-pause')
+            btnPlayLeft.classList.add('fa-play')
             playBtn.classList.remove('fa-pause-circle')
             playBtn.classList.add('fa-play-circle')
             // console.log(this.duration)
+            img.pause()
             cd.pause()
         }
 
@@ -307,7 +331,13 @@ const app = {
                 audio.volume = volume.value;
             }
         }
-
+        const img = imgMain.animate([
+            { transform: 'rotate(360deg)'}
+        ], {
+            duration: 10000,
+            iterations: Infinity
+        })
+        img.pause()
         // Xử lí xoay dĩa
         const cd = cdThump.animate([
             { transform: 'rotate(360deg)'}
