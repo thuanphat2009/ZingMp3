@@ -148,16 +148,67 @@ const app = {
             time: '4:57'
         },
         {
-            name: 'Điều Anh Luôn Giữ Kín Trong Tim',
-            singer: 'Mck, Tlinh',
-            path: './music/DiuAnhLuonGiuKinTrongTym-MCKtlinh2Pillz-7049553.mp3',
-            image: './img/dieu-anh-luon-giu-kin.jpg',
+            name: 'N-Sao',
+            singer: 'Suboi',
+            path: './music/Nsao-Suboi-5527082.mp3',
+            image: './img/N-Sao.jpg',
+            time: '3:36'
         },
         {
-            name: 'Điều Anh Luôn Giữ Kín Trong Tim',
-            singer: 'Mck, Tlinh',
-            path: './music/DiuAnhLuonGiuKinTrongTym-MCKtlinh2Pillz-7049553.mp3',
-            image: './img/dieu-anh-luon-giu-kin.jpg',
+            name: 'Okeokeoke',
+            singer: 'LowG',
+            path: './music/Okeokeoke-LowG-6821131.mp3',
+            image: './img/oke.jpg',
+            time: '2:09'
+        },
+        {
+            name: 'Night City',
+            singer: 'Obito, Hnhngan',
+            path: './music/NightCityDemo-ObitoHnhngan-6896893.mp3',
+            image: './img/night-city.jpg',
+            time: '3:19'
+        },
+        {
+            name: 'Chân Tình',
+            singer: 'Tlinh, Quang Trung',
+            path: './music/Chan-Tinh-Quang-Trung-tlinh-DTAP.mp3',
+            image: './img/chan-tinh.jpg',
+            time: '3:28'
+        },
+        {
+            name: 'Bước Qua Mùa Cô Đơn',
+            singer: 'Thái Vũ',
+            path: './music/BuocQuaMuaCoDon-Vu-6879419.mp3',
+            image: './img/buoc-qua-mua-co-don.jpg',
+            time: '4:38'
+        },
+        {
+            name: 'An Thần',
+            singer: 'LowG, Thắng',
+            path: './music/AnThan-ThangLowG-7115212.mp3',
+            image: './img/an-than.jpg',
+            time: '3:35'
+        },
+        {
+            name: '3 1 0 7',
+            singer: 'W/n ft. ( Nâu,Duongg,Titie )',
+            path: './music/3 1 0 7 - Duongg_ Nau.mp3',
+            image: './img/3107.jpg',
+            time: '3:52'
+        },
+        {
+            name: '3 1 0 7 - 2',
+            singer: 'Nâu, Duongg',
+            path: './music/31072LofiVersion-DuonggNauWn-6944268.mp3',
+            image: './img/3107-2.jpg',
+            time: '3:31'
+        },
+        {
+            name: '3 1 0 7 - 3',
+            singer: 'W/n ft. ( Nâu,Duongg,Titie )',
+            path: './music/3107-3 - W_n_ Nau_ Duongg_ Titie.mp3',
+            image: './img/3107-3.jpg',
+            time: '4:00'
         },
     ],
     
