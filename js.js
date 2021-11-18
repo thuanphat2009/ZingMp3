@@ -24,9 +24,10 @@ const volume = $('.progress2')
 const btnVolume = $('.fa-volume-up')
 const btnPlayLeft = $('.fas.fa-play')
 const imgMain = $('.playlist-img')
-const boxImg =$('.box-img')
+const boxImg = $('.box-img')
 const opacityImg = $('.opacity')
-console.log(imgMain)
+const contentSong = $$('.content-right-song')
+console.log(contentSong)
 const app = {
     currentIndex: '',
     isPlaying: false,
@@ -39,76 +40,132 @@ const app = {
             singer: 'Nguyên Hà',
             path: './music/Nham-Mat-Thay-Mua-He-Nham-Mat-Thay-Mua-He-OST-Nguyen-Ha.mp3',
             image: './img/nham-mat-thay-mua-he.jpg',
+            time: '4:42'
         },
         {
             name: 'Xin Lỗi',
             singer: 'Nguyên Hà',
             path: './music/Xin-Loi-Nguyen-Ha.mp3',
             image: './img/xin-loi.jpg',
+            time: '4:04'
         },
         {
             name: 'Hoàng Hoa',
             singer: 'Nguyên Hà',
             path: './music/Hoang-Hoa-Nguyen-Ha.mp3',
             image: './img/hoang-hoa.jpg',
+            time: '3:18'
         },
         {
             name: 'Có Một Ngày Buồn Như Thế',
             singer: 'Nguyên Hà',
             path: '../music/CoMotNgayBuonNhuThe-NguyenHa-6272636.mp3',
             image: './img/co-1-ngay-buon-nhu-the.jpg',
+            time: '4:34'
         },
         {
             name: 'Một Góc Tim Hồng',
             singer: 'Nguyên Hà',
             path: './music/Mot-Goc-Tim-Hong-Nguyen-Ha.mp3',
             image: './img/1-goc-tim-hong.jpg',
+            time: '3:43'
         },
         {
             name: 'Ta Có Hẹn Với Tháng 5',
             singer: 'Nguyên Hà',
             path: './music/Ta-Co-Hen-Voi-Thang-5-Nguyen-Ha.mp3',
             image: './img/ta-co-hen-voi-thang-5.jpg',
+            time: '4:20'
         },
         {
             name: 'Tình Mình Là Mơ',
             singer: 'Nguyên Hà',
             path: './music/Tinh-Minh-La-Mo-Nguyen-Ha.mp3',
             image: './img/tinh-minh-la-mo.jpg',
+            time: '3:20'
         },
         {
             name: 'Tôi Yêu Em',
             singer: 'Nguyên Hà',
             path: './music/Toi-Yeu-Em-Nguyen-Ha.mp3',
             image: './img/toi-yeu-em.jpg',
+            time: '2:41'
         },
         {
-            name: 'Tôi Yêu Em',
-            singer: 'Nguyên Hà',
-            path: './music/Toi-Yeu-Em-Nguyen-Ha.mp3',
-            image: './img/toi-yeu-em.jpg',
+            name: 'Cà phê, thuốc lá và những ngày vui',
+            singer: 'Thế Bảo',
+            path: './music/Cafe-Thuoc-La-Nhung-Ngay-Vui-The-Bao.mp3',
+            image: './img/cf-thuocla.jpg',
+            time: '5:25'
         },
         {
-            name: 'Tôi Yêu Em',
-            singer: 'Nguyên Hà',
-            path: './music/Toi-Yeu-Em-Nguyen-Ha.mp3',
-            image: './img/toi-yeu-em.jpg',
+            name: 'XTC',
+            singer: 'Tlinh, MCK',
+            path: './music/XTCRemix-TlinhGroovieLaThangMCKRPT-7004626.mp3',
+            image: './img/xtc.jpg',
+            time: '4:03'
         },
         {
-            name: 'Tôi Yêu Em',
-            singer: 'Nguyên Hà',
-            path: './music/Toi-Yeu-Em-Nguyen-Ha.mp3',
-            image: './img/toi-yeu-em.jpg',
+            name: 'Your Smile',
+            singer: 'Obito, Hnhngan',
+            path: './music/your-smile.mp3',
+            image: './img/your-smile.jpg',
+            time: '3:22'
         },
         {
-            name: 'Tôi Yêu Em',
-            singer: 'Nguyên Hà',
-            path: './music/Toi-Yeu-Em-Nguyen-Ha.mp3',
-            image: './img/toi-yeu-em.jpg',
+            name: 'Điều Anh Luôn Giữ Kín Trong Tim',
+            singer: 'Mck, Tlinh',
+            path: './music/DiuAnhLuonGiuKinTrongTym-MCKtlinh2Pillz-7049553.mp3',
+            image: './img/dieu-anh-luon-giu-kin.jpg',
+            time: '2:51'
+        },
+        {
+            name: 'Vài Giây Nữa Thôi',
+            singer: 'Reddy',
+            path: './music/Vai-Giay-Nua-Thoi-Reddy.mp3',
+            image: './img/vai-giay-nua-thoi.jpg',
+            time: '4:38'
+        },
+        {
+            name: 'Phố Không Em',
+            singer: 'Thái Đinh',
+            path: './music/Pho-Khong-Em-Thai-Dinh.mp3',
+            image: './img/pho-k-em.jpg',
+            time: '4:46'
+        },
+        {
+            name: 'Những Ngày Vắng Em',
+            singer: 'Thái Đinh',
+            path: './music/Nhung-Ngay-Vang-Em-Thai-Dinh.mp3',
+            image: './img/nhung-ngay-vang-em.jpg',
+            time: '4:10'
+        },
+        {
+            name: 'Là Em',
+            singer: 'Thái Đinh, Minh Cà Ri',
+            path: './music/La-Em-Thai-Dinh-Minh-Ca-Ri.mp3',
+            image: './img/la-em.jpg',
+            time: '4:57'
+        },
+        {
+            name: 'Điều Anh Luôn Giữ Kín Trong Tim',
+            singer: 'Mck, Tlinh',
+            path: './music/DiuAnhLuonGiuKinTrongTym-MCKtlinh2Pillz-7049553.mp3',
+            image: './img/dieu-anh-luon-giu-kin.jpg',
+        },
+        {
+            name: 'Điều Anh Luôn Giữ Kín Trong Tim',
+            singer: 'Mck, Tlinh',
+            path: './music/DiuAnhLuonGiuKinTrongTym-MCKtlinh2Pillz-7049553.mp3',
+            image: './img/dieu-anh-luon-giu-kin.jpg',
         },
     ],
     
     render: function(){
+            // var total = app.changeToTime(Math.floor(audio.duration))
+            // var totalBehind = total === 'NaN:NaN:NaN' ? '00:00' : total
+            // console.log(totalBehind)
+        
         const htmls = this.song.map((song,index) => {
             return `<li class="content-right-song ${index === this.currentIndex ? 'active':''}" data-index = "${index}")>
             <div class="content-right-song-box">
@@ -132,7 +189,9 @@ const app = {
                     
                 </div>
             </div>
-            
+            <span class="content-right-song-time">
+                ${song.time}
+             </span>
             <ul class="content-right-song-option-list">
                 <li class="content-right-song-option-item">
                     <i class="content-right-song-option-icon fal fa-microphone-stand"></i>
@@ -150,8 +209,9 @@ const app = {
     },
     clickSong: function(){
         
-        
         $$('.content-right-song').forEach(function(value,index){
+            
+          
             value.onclick = function(){
                 playList.style.height = '422px'
                 listMainMenu.style.height = '340px'
@@ -172,8 +232,10 @@ const app = {
     },
     handleEvent: function(){
         const _this = this
+        
+         
         // Xử lí khi click play
-        playBtn.onclick = function(){
+        $('.content-left-sub-link').onclick = function(){
             if(_this.isPlaying){
                 
               audio.pause()
@@ -184,7 +246,7 @@ const app = {
             }
             
         }
-        btnPlayLeft.onclick = function(){
+        playBtn.onclick = function(){
             if(_this.isPlaying){
                 audio.pause()
             }
@@ -201,11 +263,10 @@ const app = {
             playBtn.classList.remove('fa-play-circle')
             playBtn.classList.add('fa-pause-circle')
             imgMain.style.borderRadius = '50%'
-            imgMain.style.transition  = 'all linear .5s'
+            boxImg.style.transition  = 'all linear .5s'
             boxImg.style.borderRadius = '50%'
-            opacityImg.style.borderRadius = '50%'
+            // opacityImg.style.borderRadius = '50%'
             volume.value = 1
-            img.play()
             cd.play()
         }
         audio.onpause = function(){
@@ -214,8 +275,10 @@ const app = {
             btnPlayLeft.classList.add('fa-play')
             playBtn.classList.remove('fa-pause-circle')
             playBtn.classList.add('fa-play-circle')
+            imgMain.style.borderRadius = '5px'
+            imgMain.style.transition  = 'all linear .5s'
+            boxImg.style.borderRadius = '5px'
             // console.log(this.duration)
-            img.pause()
             cd.pause()
         }
 
@@ -226,14 +289,12 @@ const app = {
                 progress.value = progressPercent
                 var total = app.changeToTime(Math.floor(audio.duration))
                 var totalBehind = total === 'NaN:NaN:NaN' ? '00:00' : total
+
                 timeAudio.textContent = totalBehind
                 timeCurrent.textContent = app.changeToTime(Math.floor(audio.currentTime))
              }
         }
-        // Khi volume thay đổi
-        volume.ontimeupdate = function(){
-            console.log('dqwd')
-        }
+        
         // Tua Song
         progress.onchange = function(e){
             const seekTime = e.target.value * audio.duration / 100
@@ -314,7 +375,9 @@ const app = {
                 btnVolume.classList.remove('fa-volume-mute',_this.isMute)
                 btnVolume.classList.add('fa-volume-up',!_this.isMute)
         }
-
+        
+        
+         
         //Xử lý tắt/mở âm thanh
         btnVolume.onclick = function () {
             _this.isMute = !_this.isMute
@@ -331,13 +394,7 @@ const app = {
                 audio.volume = volume.value;
             }
         }
-        const img = imgMain.animate([
-            { transform: 'rotate(360deg)'}
-        ], {
-            duration: 10000,
-            iterations: Infinity
-        })
-        img.pause()
+
         // Xử lí xoay dĩa
         const cd = cdThump.animate([
             { transform: 'rotate(360deg)'}
@@ -386,6 +443,7 @@ const app = {
         },300)
         
     },
+    
     changeToTime(secs) {
         var sec_num = parseInt(secs, 10)
         var hours = Math.floor(sec_num / 3600)
@@ -400,8 +458,9 @@ const app = {
     start: function(){
         // Định nghĩa các thuộc tính cho Object
         this.defineProperties();
+        this.render();
         // Render bài hát
-         this.render();
+        
          this.clickSong();
         //  Lắng nghe / xử lí các sự kiện
          this.handleEvent();
@@ -411,6 +470,7 @@ const app = {
 }
 
 app.start();
+
 
 
 
