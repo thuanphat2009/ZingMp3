@@ -59,7 +59,7 @@ const app = {
         {
             name: 'Có Một Ngày Buồn Như Thế',
             singer: 'Nguyên Hà',
-            path: '../music/CoMotNgayBuonNhuThe-NguyenHa-6272636.mp3',
+            path: './music/CoMotNgayBuonNhuThe-NguyenHa-6272636.mp3',
             image: './img/co-1-ngay-buon-nhu-the.jpg',
             time: '4:34'
         },
