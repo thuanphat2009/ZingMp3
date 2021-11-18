@@ -264,8 +264,8 @@ const app = {
             
           
             value.onclick = function(){
-                playList.style.height = '422px'
-                listMainMenu.style.height = '340px'
+                playList.style.height = '492px'
+                listMainMenu.style.height = '390px'
                 listMainMenu.style.overflowY = 'auto';
                 newPlayList.style.display = 'none';
                 music.style.display = 'block'; 

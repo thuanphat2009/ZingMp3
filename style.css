@@ -37,7 +37,7 @@ body {
 /* Menu Logo*/
 
 #menu {
-    width: 230px;
+    width: 240px;
     height: 100vh;
     background-color: hsla(0, 0%, 100%, 0.05);
     ;
@@ -68,7 +68,7 @@ body {
 }
 
 .menu-item {
-    height: 35px;
+    height: 40px;
     position: relative;
     display: flex;
     align-items: center;
@@ -126,8 +126,8 @@ body {
     height: 16px;
     width: 34px;
     position: absolute;
-    bottom: 9px;
-    right: 90px;
+    bottom: 12px;
+    right: 101px;
 }
 
 /* Menu Main */
@@ -288,7 +288,7 @@ body {
     position: absolute;
     color: #ffffff;
     font-size: 1.7rem;
-    left: 24.25%;
+    left: 23%;
 }
 
 .content-heading-left-history {
@@ -523,7 +523,7 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 570px;
     overflow-y: scroll;
 }
 
