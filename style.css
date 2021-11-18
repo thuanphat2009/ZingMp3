@@ -387,12 +387,14 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
+    
 }
 
 .opacity {
     position: absolute;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 5px
+    border-top;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     right: 0;
@@ -526,6 +528,7 @@ body {
 }
 
 .content-right-song {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -664,6 +667,8 @@ body {
 .content-right-song-time {
     color: hsla(0, 0%, 100%, 0.5);
     font-size: 1.1rem;
+    position: absolute;
+    right: 43%;
 }
 
 .content-right-song-option-list {
