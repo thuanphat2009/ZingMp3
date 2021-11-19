@@ -210,6 +210,147 @@ const app = {
             image: './img/3107-3.jpg',
             time: '4:00'
         },
+        {
+            name: 'Who\'s Launghing Now ',
+            singer: 'Ava Max',
+            path: './music/Who_s Laughing Now - Ava Max.mp3',
+            image: './img/who-lauging-now.jpg',
+            time: '2:59'
+        },
+        {
+            name: 'Torn',
+            singer: 'Ava Max',
+            path: './music/Torn - Ava Max.mp3',
+            image: './img/torn.jpg',
+            time: '3:18'
+        },
+        {
+            name: 'Take You To Hell',
+            singer: 'Ava max',
+            path: './music/Take You To Hell - Ava Max.mp3',
+            image: './img/take-you-to-hell.jpg  ',
+            time: '2:44'
+        },
+        {
+            name: 'Sweet But Psycho',
+            singer: 'Ava Max',
+            path: './music/Sweet But Psycho - Ava Max.mp3',
+            image: './img/sweet.jpg',
+            time: '3:07'
+        },
+        {
+            name: 'So Am I',
+            singer: 'Ava Max',
+            path: './music/So Am I - Ava Max_ NCT 127.mp3',
+            image: './img/so-am-i.jpg',
+            time: '3:04'
+        },
+        {
+            name: 'Salt',
+            singer: 'Ava Max',
+            path: './music/Salt - Ava Max (NhacPro.net).mp3',
+            image: './img/salt.jpg',
+            time: '3:00'
+        },
+        {
+            name: 'On SomeBody',
+            singer: 'Ava Max',
+            path: './music/On Somebody - Ava Max.mp3',
+            image: './img/on-somebody.jpg',
+            time: '3:04'
+        },
+        {
+            name: 'Not Your Barbie Girl',
+            singer: 'Ava Max',
+            path: './music/Not Your Barbie Girl - Ava Max.mp3',
+            image: './img/not-you-babie.jpg',
+            time: '3:06'
+        },
+        {
+            name: 'My Way',
+            singer: 'Ava Max',
+            path: './music/My Way - Ava Max.mp3',
+            image: './img/my-may.jpg',
+            time: '2:21'
+        },
+        {
+            name: 'My Heat & My Heart',
+            singer: 'Ava Max',
+            path: './music/My Head My Heart - Ava Max.mp3',
+            image: './img/my-heat.jpg',
+            time: '2:54'
+        },
+        {
+            name: 'Kings And Queens',
+            singer: 'Ava Max',
+            path: './music/Kings And Queens - Ava Max.mp3',
+            image: './img/king-queen.jpg',
+            time: '2:42'
+        },
+        {
+            name: 'Jet Set',
+            singer: 'Ava Max',
+            path: './music/Jet Set - Ava Max.mp3',
+            image: './img/jet-set.jpg',
+            time: '3:34'
+        },
+        {
+            name: 'FreaKing Me Out',
+            singer: 'Ava Max',
+            path: './music/Freaking Me Out - Ava Max.mp3',
+            image: './img/freaking-me-out.jpg',
+            time: '3:12'
+        },
+        {
+            name: 'Everytime I Cry',
+            singer: 'Ava Max',
+            path: './music/Everytime I Cry - Ava Max.mp3',
+            image: './img/every-time-i-cry.jpg',
+            time: '2:57'
+        },
+        {
+            name: 'Alone, Pt II',
+            singer: 'Ava Max, Alan Walker',
+            path: './music/Alone_ Pt_ II - Alan Walker_ Ava Max.mp3',
+            image: './img/alone-pt.jpg',
+            time: '2:59'
+        },
+        {
+            name: 'You Are The Music In Me',
+            singer: 'High School Muscial',
+            path: './music/You Are The Music In Me - Zac Efron_ Van.mp3',
+            image: './img/you-are-the-music.jpg',
+            time: '3:28'
+        },
+        {
+            name: 'When There Was Me And You',
+            singer: 'High School Muscial',
+            path: './music/When There Was Me And You - Cast Of High.mp3',
+            image: './img/when-there-was-me-and-you.jpg',
+            time: '1:38'
+        },
+        {
+            name: 'Just Wanna Be With You',
+            singer: 'High School Muscial',
+            path: './music/Just Wanna Be With You - Lucas Grabeel_.mp3',
+            image: './img/i-just-wanna-be-with-you.jpg',
+            time: '2:38'
+        },
+        {
+            name: 'Gotta Go My Own Way',
+            singer: 'High School Muscial',
+            path: './music/Gotta Go My Own Way - Vanessa Hudgens_ Z.mp3',
+            image: './img/can- i-have-this-dance.jpg',
+            time: '3:42'
+        },
+        {
+            name: 'Can I Have This Dance',
+            singer: 'High School Muscial',
+            path: './music/Can I Have This Dance - Zac Efron_ Vanes.mp3',
+            image: './img/when-there-was-me-and-you.jpg',
+            time: '4:03'
+        },
+        
     ],
     
     render: function(){
